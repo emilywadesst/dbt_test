@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dbt-demo
+    description: "A demo dbt model"
+    columns:
+      - name: household_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
